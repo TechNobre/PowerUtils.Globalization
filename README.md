@@ -9,10 +9,9 @@ Utils, helpers and extensions to work with globalization
 
 
 ## Support to
-- .NET 2.0 or more
-- .NET Framework 4.6.2 or more
+- .NET 3.1 or more
 - .NET Standard 2.1 or more
-
+- .NET Framework 4.6.2 or more
 
 
 
