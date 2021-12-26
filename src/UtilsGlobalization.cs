@@ -9,22 +9,10 @@ namespace PowerUtils.Globalization
     {
         #region PUBLIC VARIABLES
         public static readonly Dictionary<string, Country> Countries;
-        public static List<Country> CountryList
-        {
-            get
-            {
-                return Countries.Select(s => s.Value).ToList();
-            }
-        }
+        public static List<Country> CountryList => Countries.Select(s => s.Value).ToList();
 
         public static readonly Dictionary<string, CultureInfo> CultureInfos;
-        public static List<CultureInfo> CultureInfoList
-        {
-            get
-            {
-                return CultureInfos.Select(s => s.Value).ToList();
-            }
-        }
+        public static List<CultureInfo> CultureInfoList => CultureInfos.Select(s => s.Value).ToList();
         #endregion
 
 
@@ -3929,7 +3917,7 @@ namespace PowerUtils.Globalization
                 return false;
             }
 
-            if (CountryList.Count(c => c.ISO3.Equals(iso3, StringComparison.InvariantCultureIgnoreCase)) == 0)
+            if (!CountryList.Any(c => c.ISO3.Equals(iso3, StringComparison.InvariantCultureIgnoreCase)))
             {
                 return false;
             }

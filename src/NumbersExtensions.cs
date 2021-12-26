@@ -36,7 +36,7 @@ namespace PowerUtils.Globalization
         public static string ConvertToCulture(this string value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
-            float number = float.Parse(value, NumberStyles.Any, cultureInfo);
+            var number = float.Parse(value, NumberStyles.Any, cultureInfo);
 
             return number.ToString("N", cultureInfo.NumberFormat);
         }
@@ -337,7 +337,7 @@ namespace PowerUtils.Globalization
         /// <returns>Decimal number</returns>
         public static decimal ConvertToDecimalCulture(this string value)
         {
-            CultureInfo cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
+            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
             return value.ConvertToDecimalCulture(cultureInfo);
         }
 

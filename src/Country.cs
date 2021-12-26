@@ -19,17 +19,17 @@
 
         internal Country(int isoNumeric, string iso2, string iso3, string englishName, string nativeName, string nationalityName, string capital, string continent, string currencyCode, string domain, string iddCode)
         {
-            this.ISONumeric = isoNumeric;
-            this.ISO2 = iso2;
-            this.ISO3 = iso3;
-            this.EnglishName = englishName;
-            this.NativeName = nativeName;
-            this.NationalityName = nationalityName;
-            this.Capital = capital;
-            this.Continent = continent;
-            this.CurrencyCode = currencyCode;
-            this.Domain = domain;
-            this.IDDCode = iddCode;
+            ISONumeric = isoNumeric;
+            ISO2 = iso2;
+            ISO3 = iso3;
+            EnglishName = englishName;
+            NativeName = nativeName;
+            NationalityName = nationalityName;
+            Capital = capital;
+            Continent = continent;
+            CurrencyCode = currencyCode;
+            Domain = domain;
+            IDDCode = iddCode;
         }
     }
 }
