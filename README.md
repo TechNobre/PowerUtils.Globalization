@@ -4,7 +4,7 @@ Utils, helpers and extensions to work with globalization
 ![CI](https://github.com/TechNobre/PowerUtils.Globalization/actions/workflows/main.yml/badge.svg)
 [![NuGet](https://img.shields.io/nuget/v/PowerUtils.Globalization.svg)](https://www.nuget.org/packages/PowerUtils.Globalization)
 [![Nuget](https://img.shields.io/nuget/dt/PowerUtils.Globalization.svg)](https://www.nuget.org/packages/PowerUtils.Globalization)
-[![License: MIT](https://img.shields.io/github/license/ofpinewood/http-exceptions.svg)](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.Globalization.svg)](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE)
 
 
 
