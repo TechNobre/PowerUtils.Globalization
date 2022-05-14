@@ -22,19 +22,18 @@ insert_final_newline = false
 charset = utf-8
 
 
-
 # XML project files
 [*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
 indent_size = 2
 
-
+# Yaml files
+[*.{yaml,yml}]
+indent_size = 2
 
 
 # Config files
 [*.{props,targets,ruleset,config,nuspec,resx,vsixmanifest,vsct,json}]
 indent_size = 2
-
-
 
 
 # Code files
@@ -428,9 +427,6 @@ dotnet_diagnostic.CA1848.severity = none
 
 # CA2254: Template should be a static expression
 dotnet_diagnostic.CA2254.severity = none
-
-# CA2208: Instantiate argument exceptions correctly - https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca2208
-dotnet_diagnostic.CA2208.severity = none # Occurs when we use string  interpolation in message. E.g. new ArgumentNullException(nameof(Name), $"The {nameof(Name)} cannot be null");
 
 
 
