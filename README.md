@@ -1,7 +1,10 @@
 # PowerUtils.Globalization
 Utils, helpers and extensions to work with globalization
 
-![CI](https://github.com/TechNobre/PowerUtils.Globalization/actions/workflows/main.yml/badge.svg)
+![Tests](https://github.com/TechNobre/PowerUtils.Globalization/actions/workflows/test-project.yml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.Globalization&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.Globalization)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.Globalization&metric=coverage)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.Globalization)
+
 [![NuGet](https://img.shields.io/nuget/v/PowerUtils.Globalization.svg)](https://www.nuget.org/packages/PowerUtils.Globalization)
 [![Nuget](https://img.shields.io/nuget/dt/PowerUtils.Globalization.svg)](https://www.nuget.org/packages/PowerUtils.Globalization)
 [![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.Globalization.svg)](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE)
@@ -71,7 +74,8 @@ dotnet add package PowerUtils.Globalization
 
 ### Extensions <a name="Extensions"></a>
 - `DateTimeExtensions`
-  - `DateTime.ToTimestamp()`: Method to convert datetime to timestamp;
+  - `DateTime.ToTimestamp()`: Convert datetime to timestamp (Unix timestamp is seconds past epoch)
+  - `timestamp.FromTimestampToDateTime()`: Convert timestamp (Unix timestamp is seconds past epoch) to datetime
 
 - `NumbersExtensions`
   - `string.ConvertToCulture(languageCode)`: Convert text number to text number culture;
@@ -157,9 +161,6 @@ public class Country
 
 
 
+## Changelog
 
-## Release Notes
-
-
-### v1.0.0 - 2021/11/21
-- Kick start project
+[Here](./CHANGELOG.md)

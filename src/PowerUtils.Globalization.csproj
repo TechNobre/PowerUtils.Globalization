@@ -1,6 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <ProjectGuid>836c5ff1-0f2c-436c-9c7c-90af12bbc322</ProjectGuid>
+
+    <CurrentYear>$([System.DateTime]::UtcNow.ToString(yyyy))</CurrentYear>
+
+
     <!-- Assembly and projecto details -->
     <!-- https://docs.microsoft.com/en-us/dotnet/standard/frameworks -->
     <TargetFrameworks>net6.0;net5.0;netcoreapp3.1;netstandard2.1;net48;net462</TargetFrameworks>
@@ -14,19 +19,17 @@
     <PackageId>PowerUtils.Globalization</PackageId>
     <title>PowerUtils.Globalization</title>
     <Product>PowerUtils.Globalization</Product>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
 
     <Authors>Nelson Nobre</Authors>
     <Company>TechNobre</Company>
 
     <License>MIT</License>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Copyright>Copyright © 2021 by TechNobre</Copyright>
+    <Copyright>Copyright © $(CurrentYear) by TechNobre</Copyright>
 
     <Description>Utils, helpers and extensions to work with globalization</Description>
-    <PackageReleaseNotes>
-      - Kick start project
-    </PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/TechNobre/PowerUtils.Globalization/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <Summary>Utils, helpers and extensions to work with globalization</Summary>
     <PackageTags>PowerUtils;Utils;Helpers;Extensions;Globalization;Countries</PackageTags>
     <RepositoryUrl>https://github.com/TechNobre/PowerUtils.Globalization</RepositoryUrl>
@@ -65,7 +68,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <DefineConstants>RELEASE;TRACE</DefineConstants>
+    <DefineConstants>RELEASE</DefineConstants>
     <ErrorReport>none</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
