@@ -33,7 +33,7 @@ public class DateTimeExtensionsTests
 
         // Assert
         act.Should()
-            .Be(new DateTime(2022, 05, 15, 14, 43, 52));
+            .Be(new DateTime(2022, 05, 15, 13, 43, 52));
     }
 
     [Fact]
@@ -50,7 +50,7 @@ public class DateTimeExtensionsTests
 
         // Assert
         act.Should()
-            .Be(new DateTime(2022, 05, 15, 14, 43, 52));
+            .Be(new DateTime(2022, 05, 15, 13, 43, 52));
     }
 
     [Fact]
@@ -67,7 +67,7 @@ public class DateTimeExtensionsTests
 
         // Assert
         act.Should()
-            .Be(new DateTime(2022, 05, 15, 14, 43, 52));
+            .Be(new DateTime(2022, 05, 15, 13, 43, 52));
     }
 
     [Fact]
@@ -84,6 +84,6 @@ public class DateTimeExtensionsTests
 
         // Assert
         act.Should()
-            .Be(new DateTime(2022, 05, 15, 14, 43, 52));
+            .Be(new DateTime(2022, 05, 15, 13, 43, 52));
     }
 }

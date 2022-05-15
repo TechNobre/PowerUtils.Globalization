@@ -15,7 +15,7 @@ public class NumbersExtensionsTests
 
         // Assert
         act.Should()
-            .Be("1" + UtilsNumber.GetThousandSeparator("pt-PT") + "011" + UtilsNumber.GetDecimalSeparator("pt-PT") + "23");
+            .StartWith("1" + UtilsNumber.GetThousandSeparator("pt-PT") + "011" + UtilsNumber.GetDecimalSeparator("pt-PT") + "23");
     }
 
     [Fact]

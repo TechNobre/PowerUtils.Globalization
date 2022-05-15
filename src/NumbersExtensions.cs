@@ -25,7 +25,7 @@ namespace PowerUtils.Globalization
         /// <returns>Text formatted in culture</returns>
         public static string ConvertToCulture(this string value, CultureInfo cultureInfo)
         {
-            var number = float.Parse(value, NumberStyles.Any, cultureInfo);
+            var number = double.Parse(value, NumberStyles.Any, cultureInfo);
 
             return number.ToString("N", cultureInfo.NumberFormat);
         }
