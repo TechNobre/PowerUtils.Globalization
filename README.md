@@ -1,10 +1,11 @@
 # PowerUtils.Globalization
 Utils, helpers and extensions to work with globalization
 
-![CI](https://github.com/TechNobre/PowerUtils.Globalization/actions/workflows/main.yml/badge.svg)
+![Tests](https://github.com/TechNobre/PowerUtils.Globalization/actions/workflows/test-project.yml/badge.svg)
+
 [![NuGet](https://img.shields.io/nuget/v/PowerUtils.Globalization.svg)](https://www.nuget.org/packages/PowerUtils.Globalization)
 [![Nuget](https://img.shields.io/nuget/dt/PowerUtils.Globalization.svg)](https://www.nuget.org/packages/PowerUtils.Globalization)
-[![License: MIT](https://img.shields.io/github/license/ofpinewood/http-exceptions.svg)](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.Globalization.svg)](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE)
 
 
 
@@ -71,7 +72,9 @@ dotnet add package PowerUtils.Globalization
 
 ### Extensions <a name="Extensions"></a>
 - `DateTimeExtensions`
-  - `DateTime.ToTimestamp()`: Method to convert datetime to timestamp;
+  - `DateTime.ToTimestamp()`: Convert datetime to timestamp (Unix timestamp is seconds past epoch)
+  - `DateTime.ToTimestampMS()`: Convert datetime to timestamp in milliseconds (Unix timestamp is seconds past epoch)
+  - `timestamp.FromTimestampToDateTime()`: Convert timestamp (Unix timestamp is seconds past epoch) to datetime
 
 - `NumbersExtensions`
   - `string.ConvertToCulture(languageCode)`: Convert text number to text number culture;
@@ -157,9 +160,6 @@ public class Country
 
 
 
+## Changelog
 
-## Release Notes
-
-
-### v1.0.0 - 2021/11/21
-- Kick start project
+[Here](./CHANGELOG.md)
