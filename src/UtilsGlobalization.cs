@@ -2719,7 +2719,7 @@ namespace PowerUtils.Globalization
                         iddCode: "48")
                 },
                 {
-                                "PT",
+                    "PT",
                     new Country(
                         isoNumeric: 620,
                         iso2: "PT",
@@ -2731,7 +2731,8 @@ namespace PowerUtils.Globalization
                         continent: "Europe",
                         currencyCode: "EUR",
                         domain: "pt",
-                        iddCode: "351")
+                        iddCode: "351"
+                    )
                 },
                 {
                                 "GW",
@@ -3184,7 +3185,7 @@ namespace PowerUtils.Globalization
                         iddCode: "263")
                 },
                 {
-                                "ES",
+                    "ES",
                     new Country(
                         isoNumeric: 724,
                         iso2: "ES",
@@ -3196,7 +3197,8 @@ namespace PowerUtils.Globalization
                         continent: "Europe",
                         currencyCode: "EUR",
                         domain: "es",
-                        iddCode: "34")
+                        iddCode: "34"
+                    )
                 },
                 {
                                 "SS",
@@ -3814,59 +3816,63 @@ namespace PowerUtils.Globalization
 
         #region HELPERS
         /// <summary>
-        /// Method to get ISO numeric by ISO2
+        /// Get ISO numeric by ISO2
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
-        /// <returns>ISONumeric</returns>
+        /// <returns>ISONumeric | -1 when the code does not exist</returns>
         public static int GetISONumeric(string iso2)
         {
-            if (string.IsNullOrWhiteSpace(iso2))
+            if(IfExistISO2(iso2))
             {
-                return -1;
+                return Countries[iso2.ToUpper()].ISONumeric;
             }
-            return Countries[iso2.ToUpper()].ISONumeric;
+
+            return -1;
         }
 
         /// <summary>
-        /// Method to get ISO3 by ISO2
+        /// Get ISO3 by ISO2
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
         /// <returns>ISO3</returns>
         public static string GetISO3(string iso2)
         {
-            if (string.IsNullOrWhiteSpace(iso2))
+            if(IfExistISO2(iso2))
             {
-                return null;
+                return Countries[iso2.ToUpper()].ISO3;
             }
-            return Countries[iso2.ToUpper()].ISO3;
+
+            return null;
         }
 
         /// <summary>
-        /// Method to get english name by iso2
+        /// Get english name by iso2
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
         /// <returns>EnglishName</returns>
         public static string GetEnglishName(string iso2)
         {
-            if (string.IsNullOrWhiteSpace(iso2))
+            if(IfExistISO2(iso2))
             {
-                return null;
+                return Countries[iso2.ToUpper()].EnglishName;
             }
-            return Countries[iso2.ToUpper()].EnglishName;
+
+            return null;
         }
 
         /// <summary>
-        /// Method to get native name by iso2
+        /// Get native name by iso2
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
         /// <returns>NativeName</returns>
         public static string GetNativeName(string iso2)
         {
-            if (string.IsNullOrWhiteSpace(iso2))
+            if(IfExistISO2(iso2))
             {
-                return null;
+                return Countries[iso2.ToUpper()].NativeName;
             }
-            return Countries[iso2.ToUpper()].NativeName;
+
+            return null;
         }
 
         /// <summary>
@@ -3876,11 +3882,12 @@ namespace PowerUtils.Globalization
         /// <returns>NationalityName</returns>
         public static string GetNationalityName(string iso2)
         {
-            if (string.IsNullOrWhiteSpace(iso2))
+            if(IfExistISO2(iso2))
             {
-                return null;
+                return Countries[iso2.ToUpper()].NationalityName;
             }
-            return Countries[iso2.ToUpper()].NationalityName;
+
+            return null;
         }
 
         /// <summary>
@@ -3890,11 +3897,12 @@ namespace PowerUtils.Globalization
         /// <returns>IDDCode</returns>
         public static string GetIDDCode(string iso2)
         {
-            if (string.IsNullOrWhiteSpace(iso2))
+            if(IfExistISO2(iso2))
             {
-                return null;
+                return Countries[iso2.ToUpper()].IDDCode;
             }
-            return Countries[iso2.ToUpper()].IDDCode;
+
+            return null;
         }
 
         /// <summary>
@@ -3906,47 +3914,44 @@ namespace PowerUtils.Globalization
             => CultureInfos.SingleOrDefault(s => s.Key.Equals(cultureCode, StringComparison.InvariantCultureIgnoreCase)).Value;
 
         /// <summary>
-        /// Method to check if the country code ISO3 exist
+        /// Check if the country code ISO3 exist
         /// </summary>
         /// <param name="iso3">Three-letter code</param>
         /// <returns>Bool if exist or not</returns>
         public static bool IfExistISO3(string iso3)
         {
-            if (string.IsNullOrWhiteSpace(iso3))
+            if(string.IsNullOrWhiteSpace(iso3))
             {
                 return false;
             }
 
-            if (!CountryList.Any(c => c.ISO3.Equals(iso3, StringComparison.InvariantCultureIgnoreCase)))
+            if(CountryList.Any(c => c.ISO3.Equals(iso3, StringComparison.InvariantCultureIgnoreCase)))
             {
-                return false;
-            }
-            else
-            {
+
                 return true;
             }
+
+            return false;
         }
 
         /// <summary>
-        /// Method to check if the country code iso2 exist
+        /// Check if the country code iso2 exist
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
         /// <returns>Bool if exist or not</returns>
         public static bool IfExistISO2(string iso2)
         {
-            if (string.IsNullOrWhiteSpace(iso2))
+            if(string.IsNullOrWhiteSpace(iso2))
             {
                 return false;
             }
 
-            if (Countries.ContainsKey(iso2.ToUpper()))
+            if(Countries.ContainsKey(iso2.ToUpper()))
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
+
+            return false;
         }
         #endregion
     }

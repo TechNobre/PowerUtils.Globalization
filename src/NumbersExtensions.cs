@@ -16,6 +16,7 @@ namespace PowerUtils.Globalization
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
             return value.ConvertToCulture(cultureInfo);
         }
+
         /// <summary>
         /// Convert text number to text number culture
         /// </summary>
@@ -28,6 +29,7 @@ namespace PowerUtils.Globalization
 
             return number.ToString("N", cultureInfo.NumberFormat);
         }
+
         /// <summary>
         /// Convert text number to text number culture
         /// </summary>
@@ -39,306 +41,6 @@ namespace PowerUtils.Globalization
             var number = float.Parse(value, NumberStyles.Any, cultureInfo);
 
             return number.ToString("N", cultureInfo.NumberFormat);
-        }
-
-        /// <summary>
-        /// Convert text number to short number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="languageCode">Language code</param>
-        /// <returns>Short number</returns>
-        public static short ConvertToShortCulture(this string value, string languageCode)
-        {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
-            return value.ConvertToShortCulture(cultureInfo);
-        }
-        /// <summary>
-        /// Convert text number to short number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="cultureInfo">Culture info</param>
-        /// <returns>Short number</returns>
-        public static short ConvertToShortCulture(this string value, CultureInfo cultureInfo)
-        {
-            var number = short.Parse(value, NumberStyles.Any, cultureInfo);
-            return number;
-        }
-        /// <summary>
-        /// Convert text number to short number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <returns>Short number</returns>
-        public static short ConvertToShortCulture(this string value)
-        {
-            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
-            return value.ConvertToShortCulture(cultureInfo);
-        }
-
-        /// <summary>
-        /// Convert text number to ushort number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="languageCode">Language code</param>
-        /// <returns>UShort number</returns>
-        public static ushort ConvertToUShortCulture(this string value, string languageCode)
-        {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
-            return value.ConvertToUShortCulture(cultureInfo);
-        }
-        /// <summary>
-        /// Convert text number to ushort number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="cultureInfo">Culture info</param>
-        /// <returns>UShort number</returns>
-        public static ushort ConvertToUShortCulture(this string value, CultureInfo cultureInfo)
-        {
-            var number = ushort.Parse(value, NumberStyles.Any, cultureInfo);
-            return number;
-        }
-        /// <summary>
-        /// Convert text number to ushort number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <returns>UShort number</returns>
-        public static ushort ConvertToUShortCulture(this string value)
-        {
-            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
-            return value.ConvertToUShortCulture(cultureInfo);
-        }
-
-        /// <summary>
-        /// Convert text number to int number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="languageCode">Language code</param>
-        /// <returns>Int number</returns>
-        public static int ConvertToIntCulture(this string value, string languageCode)
-        {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
-            return value.ConvertToIntCulture(cultureInfo);
-        }
-        /// <summary>
-        /// Convert text number to int number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="cultureInfo">Culture info</param>
-        /// <returns>Int number</returns>
-        public static int ConvertToIntCulture(this string value, CultureInfo cultureInfo)
-        {
-            var number = int.Parse(value, NumberStyles.Any, cultureInfo);
-
-            return number;
-        }
-        /// <summary>
-        /// Convert text number to int number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <returns>Int number</returns>
-        public static int ConvertToIntCulture(this string value)
-        {
-            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
-            return value.ConvertToIntCulture(cultureInfo);
-        }
-
-        /// <summary>
-        /// Convert text number to uint number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="languageCode">Language code</param>
-        /// <returns>UInt number</returns>
-        public static uint ConvertToUIntCulture(this string value, string languageCode)
-        {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
-            return value.ConvertToUIntCulture(cultureInfo);
-        }
-        /// <summary>
-        /// Convert text number to uint number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="cultureInfo">Culture info</param>
-        /// <returns>UInt number</returns>
-        public static uint ConvertToUIntCulture(this string value, CultureInfo cultureInfo)
-        {
-            var number = uint.Parse(value, NumberStyles.Any, cultureInfo);
-            return number;
-        }
-        /// <summary>
-        /// Convert text number to uint number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <returns>UInt number</returns>
-        public static uint ConvertToUIntCulture(this string value)
-        {
-            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
-            return value.ConvertToUIntCulture(cultureInfo);
-        }
-
-        /// <summary>
-        /// Convert text number to long number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="languageCode">Language code</param>
-        /// <returns>Long number</returns>
-        public static long ConvertToLongCulture(this string value, string languageCode)
-        {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
-            return value.ConvertToLongCulture(cultureInfo);
-        }
-        /// <summary>
-        /// Convert text number to long number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="cultureInfo">Culture info</param>
-        /// <returns>Long number</returns>
-        public static long ConvertToLongCulture(this string value, CultureInfo cultureInfo)
-        {
-            var number = long.Parse(value, NumberStyles.Any, cultureInfo);
-            return number;
-        }
-        /// <summary>
-        /// Convert text number to long number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <returns>Long number</returns>
-        public static long ConvertToLongCulture(this string value)
-        {
-            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
-            return value.ConvertToLongCulture(cultureInfo);
-        }
-
-        /// <summary>
-        /// Convert text number to ulong number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="languageCode">Language code</param>
-        /// <returns>ULong number</returns>
-        public static ulong ConvertToULongCulture(this string value, string languageCode)
-        {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
-            return value.ConvertToULongCulture(cultureInfo);
-        }
-        /// <summary>
-        /// Convert text number to ulong number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="cultureInfo">Culture info</param>
-        /// <returns>ULong number</returns>
-        public static ulong ConvertToULongCulture(this string value, CultureInfo cultureInfo)
-        {
-            var number = ulong.Parse(value, NumberStyles.Any, cultureInfo);
-            return number;
-        }
-        /// <summary>
-        /// Convert text number to ulong number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <returns>ULong number</returns>
-        public static ulong ConvertToULongCulture(this string value)
-        {
-            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
-            return value.ConvertToULongCulture(cultureInfo);
-        }
-
-        /// <summary>
-        /// Convert text number to float number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="languageCode">Language code</param>
-        /// <returns>Float number</returns>
-        public static float ConvertToFloatCulture(this string value, string languageCode)
-        {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
-            return value.ConvertToFloatCulture(cultureInfo);
-        }
-        /// <summary>
-        /// Convert text number to float number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="cultureInfo">Culture info</param>
-        /// <returns>Float number</returns>
-        public static float ConvertToFloatCulture(this string value, CultureInfo cultureInfo)
-        {
-            var number = float.Parse(value, NumberStyles.Any, cultureInfo);
-            return number;
-        }
-        /// <summary>
-        /// Convert text number to float number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <returns>Float number</returns>
-        public static float ConvertToFloatCulture(this string value)
-        {
-            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
-            return value.ConvertToFloatCulture(cultureInfo);
-        }
-
-        /// <summary>
-        /// Convert text number to double number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="languageCode">Language code</param>
-        /// <returns>Double number</returns>
-        public static double ConvertToDoubleCulture(this string value, string languageCode)
-        {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
-            return value.ConvertToDoubleCulture(cultureInfo);
-        }
-        /// <summary>
-        /// Convert text number to double number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="cultureInfo">Culture info</param>
-        /// <returns>Double number</returns>
-        public static double ConvertToDoubleCulture(this string value, CultureInfo cultureInfo)
-        {
-            var number = double.Parse(value, NumberStyles.Any, cultureInfo);
-
-            return number;
-        }
-        /// <summary>
-        /// Convert text number to double number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <returns>Double number</returns>
-        public static double ConvertToDoubleCulture(this string value)
-        {
-            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
-            return value.ConvertToDoubleCulture(cultureInfo);
-        }
-
-        /// <summary>
-        /// Convert text number to decimal number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="languageCode">Language code</param>
-        /// <returns>Decimal number</returns>
-        public static decimal ConvertToDecimalCulture(this string value, string languageCode)
-        {
-            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
-            return value.ConvertToDecimalCulture(cultureInfo);
-        }
-        /// <summary>
-        /// Convert text number to decimal number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <param name="cultureInfo">Culture info</param>
-        /// <returns>Decimal number</returns>
-        public static decimal ConvertToDecimalCulture(this string value, CultureInfo cultureInfo)
-        {
-            var number = decimal.Parse(value, NumberStyles.Any, cultureInfo);
-
-            return number;
-        }
-        /// <summary>
-        /// Convert text number to decimal number
-        /// </summary>
-        /// <param name="value">Text number input</param>
-        /// <returns>Decimal number</returns>
-        public static decimal ConvertToDecimalCulture(this string value)
-        {
-            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
-            return value.ConvertToDecimalCulture(cultureInfo);
         }
 
         /// <summary>
@@ -354,6 +56,7 @@ namespace PowerUtils.Globalization
 
             return value.ConvertToCulture(cultureInfo, decimalDigits);
         }
+        
         /// <summary>
         /// Convert double number to text number culture
         /// </summary>
@@ -389,6 +92,7 @@ namespace PowerUtils.Globalization
 
             return value.ConvertToCulture(cultureInfo, decimalDigits);
         }
+
         /// <summary>
         /// Convert decimal number to text number culture
         /// </summary>
@@ -424,6 +128,7 @@ namespace PowerUtils.Globalization
 
             return value.ConvertToCulture(cultureInfo, decimalDigits);
         }
+
         /// <summary>
         /// Convert float number to text number culture
         /// </summary>
@@ -490,6 +195,7 @@ namespace PowerUtils.Globalization
 
             return value.ConvertToCulture(cultureInfo);
         }
+
         /// <summary>
         /// Convert uint number to text number culture
         /// </summary>
@@ -508,6 +214,360 @@ namespace PowerUtils.Globalization
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
             return value.ToString("N0", cultureInfo.NumberFormat);
+        }
+
+
+
+
+
+        /// <summary>
+        /// Convert text number to short number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="languageCode">Language code</param>
+        /// <returns>Short number</returns>
+        public static short ConvertToShortCulture(this string value, string languageCode)
+        {
+            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
+            return value.ConvertToShortCulture(cultureInfo);
+        }
+
+        /// <summary>
+        /// Convert text number to short number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="cultureInfo">Culture info</param>
+        /// <returns>Short number</returns>
+        public static short ConvertToShortCulture(this string value, CultureInfo cultureInfo)
+        {
+            var number = short.Parse(value, NumberStyles.Any, cultureInfo);
+            return number;
+        }
+
+        /// <summary>
+        /// Convert text number to short number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <returns>Short number</returns>
+        public static short ConvertToShortCulture(this string value)
+        {
+            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
+            return value.ConvertToShortCulture(cultureInfo);
+        }
+
+
+
+
+        /// <summary>
+        /// Convert text number to ushort number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="languageCode">Language code</param>
+        /// <returns>UShort number</returns>
+        public static ushort ConvertToUShortCulture(this string value, string languageCode)
+        {
+            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
+            return value.ConvertToUShortCulture(cultureInfo);
+        }
+
+        /// <summary>
+        /// Convert text number to ushort number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="cultureInfo">Culture info</param>
+        /// <returns>UShort number</returns>
+        public static ushort ConvertToUShortCulture(this string value, CultureInfo cultureInfo)
+        {
+            var number = ushort.Parse(value, NumberStyles.Any, cultureInfo);
+            return number;
+        }
+
+        /// <summary>
+        /// Convert text number to ushort number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <returns>UShort number</returns>
+        public static ushort ConvertToUShortCulture(this string value)
+        {
+            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
+            return value.ConvertToUShortCulture(cultureInfo);
+        }
+
+
+
+
+
+        /// <summary>
+        /// Convert text number to int number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="languageCode">Language code</param>
+        /// <returns>Int number</returns>
+        public static int ConvertToIntCulture(this string value, string languageCode)
+        {
+            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
+            return value.ConvertToIntCulture(cultureInfo);
+        }
+
+        /// <summary>
+        /// Convert text number to int number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="cultureInfo">Culture info</param>
+        /// <returns>Int number</returns>
+        public static int ConvertToIntCulture(this string value, CultureInfo cultureInfo)
+        {
+            var number = int.Parse(value, NumberStyles.Any, cultureInfo);
+
+            return number;
+        }
+
+        /// <summary>
+        /// Convert text number to int number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <returns>Int number</returns>
+        public static int ConvertToIntCulture(this string value)
+        {
+            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
+            return value.ConvertToIntCulture(cultureInfo);
+        }
+
+
+
+
+
+
+        /// <summary>
+        /// Convert text number to uint number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="languageCode">Language code</param>
+        /// <returns>UInt number</returns>
+        public static uint ConvertToUIntCulture(this string value, string languageCode)
+        {
+            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
+            return value.ConvertToUIntCulture(cultureInfo);
+        }
+
+        /// <summary>
+        /// Convert text number to uint number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="cultureInfo">Culture info</param>
+        /// <returns>UInt number</returns>
+        public static uint ConvertToUIntCulture(this string value, CultureInfo cultureInfo)
+        {
+            var number = uint.Parse(value, NumberStyles.Any, cultureInfo);
+            return number;
+        }
+
+        /// <summary>
+        /// Convert text number to uint number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <returns>UInt number</returns>
+        public static uint ConvertToUIntCulture(this string value)
+        {
+            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
+            return value.ConvertToUIntCulture(cultureInfo);
+        }
+
+
+
+
+
+        /// <summary>
+        /// Convert text number to long number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="languageCode">Language code</param>
+        /// <returns>Long number</returns>
+        public static long ConvertToLongCulture(this string value, string languageCode)
+        {
+            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
+            return value.ConvertToLongCulture(cultureInfo);
+        }
+
+        /// <summary>
+        /// Convert text number to long number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="cultureInfo">Culture info</param>
+        /// <returns>Long number</returns>
+        public static long ConvertToLongCulture(this string value, CultureInfo cultureInfo)
+        {
+            var number = long.Parse(value, NumberStyles.Any, cultureInfo);
+            return number;
+        }
+
+        /// <summary>
+        /// Convert text number to long number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <returns>Long number</returns>
+        public static long ConvertToLongCulture(this string value)
+        {
+            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
+            return value.ConvertToLongCulture(cultureInfo);
+        }
+
+        /// <summary>
+        /// Convert text number to ulong number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="languageCode">Language code</param>
+        /// <returns>ULong number</returns>
+        public static ulong ConvertToULongCulture(this string value, string languageCode)
+        {
+            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
+            return value.ConvertToULongCulture(cultureInfo);
+        }
+
+
+
+
+        /// <summary>
+        /// Convert text number to ulong number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="cultureInfo">Culture info</param>
+        /// <returns>ULong number</returns>
+        public static ulong ConvertToULongCulture(this string value, CultureInfo cultureInfo)
+        {
+            var number = ulong.Parse(value, NumberStyles.Any, cultureInfo);
+            return number;
+        }
+
+        /// <summary>
+        /// Convert text number to ulong number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <returns>ULong number</returns>
+        public static ulong ConvertToULongCulture(this string value)
+        {
+            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
+            return value.ConvertToULongCulture(cultureInfo);
+        }
+
+
+
+
+
+        /// <summary>
+        /// Convert text number to float number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="languageCode">Language code</param>
+        /// <returns>Float number</returns>
+        public static float ConvertToFloatCulture(this string value, string languageCode)
+        {
+            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
+            return value.ConvertToFloatCulture(cultureInfo);
+        }
+
+        /// <summary>
+        /// Convert text number to float number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="cultureInfo">Culture info</param>
+        /// <returns>Float number</returns>
+        public static float ConvertToFloatCulture(this string value, CultureInfo cultureInfo)
+        {
+            var number = float.Parse(value, NumberStyles.Any, cultureInfo);
+            return number;
+        }
+
+        /// <summary>
+        /// Convert text number to float number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <returns>Float number</returns>
+        public static float ConvertToFloatCulture(this string value)
+        {
+            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
+            return value.ConvertToFloatCulture(cultureInfo);
+        }
+
+
+
+
+
+
+        /// <summary>
+        /// Convert text number to double number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="languageCode">Language code</param>
+        /// <returns>Double number</returns>
+        public static double ConvertToDoubleCulture(this string value, string languageCode)
+        {
+            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
+            return value.ConvertToDoubleCulture(cultureInfo);
+        }
+        
+        /// <summary>
+        /// Convert text number to double number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="cultureInfo">Culture info</param>
+        /// <returns>Double number</returns>
+        public static double ConvertToDoubleCulture(this string value, CultureInfo cultureInfo)
+        {
+            var number = double.Parse(value, NumberStyles.Any, cultureInfo);
+
+            return number;
+        }
+        
+        /// <summary>
+        /// Convert text number to double number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <returns>Double number</returns>
+        public static double ConvertToDoubleCulture(this string value)
+        {
+            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
+            return value.ConvertToDoubleCulture(cultureInfo);
+        }
+
+
+
+
+
+        /// <summary>
+        /// Convert text number to decimal number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="languageCode">Language code</param>
+        /// <returns>Decimal number</returns>
+        public static decimal ConvertToDecimalCulture(this string value, string languageCode)
+        {
+            var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
+            return value.ConvertToDecimalCulture(cultureInfo);
+        }
+        
+        /// <summary>
+        /// Convert text number to decimal number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <param name="cultureInfo">Culture info</param>
+        /// <returns>Decimal number</returns>
+        public static decimal ConvertToDecimalCulture(this string value, CultureInfo cultureInfo)
+        {
+            var number = decimal.Parse(value, NumberStyles.Any, cultureInfo);
+
+            return number;
+        }
+        
+        /// <summary>
+        /// Convert text number to decimal number
+        /// </summary>
+        /// <param name="value">Text number input</param>
+        /// <returns>Decimal number</returns>
+        public static decimal ConvertToDecimalCulture(this string value)
+        {
+            var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
+            return value.ConvertToDecimalCulture(cultureInfo);
         }
     }
 }
