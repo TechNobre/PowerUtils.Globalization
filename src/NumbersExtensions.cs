@@ -56,7 +56,7 @@ namespace PowerUtils.Globalization
 
             return value.ConvertToCulture(cultureInfo, decimalDigits);
         }
-        
+
         /// <summary>
         /// Convert double number to text number culture
         /// </summary>
@@ -505,7 +505,7 @@ namespace PowerUtils.Globalization
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
             return value.ConvertToDoubleCulture(cultureInfo);
         }
-        
+
         /// <summary>
         /// Convert text number to double number
         /// </summary>
@@ -518,7 +518,7 @@ namespace PowerUtils.Globalization
 
             return number;
         }
-        
+
         /// <summary>
         /// Convert text number to double number
         /// </summary>
@@ -545,7 +545,7 @@ namespace PowerUtils.Globalization
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
             return value.ConvertToDecimalCulture(cultureInfo);
         }
-        
+
         /// <summary>
         /// Convert text number to decimal number
         /// </summary>
@@ -558,7 +558,7 @@ namespace PowerUtils.Globalization
 
             return number;
         }
-        
+
         /// <summary>
         /// Convert text number to decimal number
         /// </summary>

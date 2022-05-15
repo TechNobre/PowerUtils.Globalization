@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
+﻿using System.Linq;
 
 namespace PowerUtils.Globalization.Tests;
 
@@ -21,20 +16,28 @@ public class UtilsGlobalizationExtensions
 
 
         // Assert
-        act.Should()
-            .BeEquivalentTo(new Country(
-                isoNumeric: 620,
-                iso2: "PT",
-                iso3: "PRT",
-                englishName: "Portugal",
-                nativeName: "Portugal",
-                nationalityName: "Portuguese",
-                capital: "Lisbon",
-                continent: "Europe",
-                currencyCode: "EUR",
-                domain: "pt",
-                iddCode: "351"
-            ));
+        act.ISONumeric.Should()
+            .Be(620);
+        act.ISO2.Should()
+            .Be("PT");
+        act.ISO3.Should()
+            .Be("PRT");
+        act.EnglishName.Should()
+            .Be("Portugal");
+        act.NativeName.Should()
+            .Be("Portugal");
+        act.NationalityName.Should()
+            .Be("Portuguese");
+        act.Capital.Should()
+            .Be("Lisbon");
+        act.Continent.Should()
+            .Be("Europe");
+        act.CurrencyCode.Should()
+            .Be("EUR");
+        act.Domain.Should()
+            .Be("pt");
+        act.IDDCode.Should()
+            .Be("351");
     }
 
 
@@ -50,20 +53,28 @@ public class UtilsGlobalizationExtensions
 
 
         // Assert
-        act.Should()
-            .BeEquivalentTo(new Country(
-                isoNumeric: 724,
-                iso2: "ES",
-                iso3: "ESP",
-                englishName: "Spain",
-                nativeName: "Espanya",
-                nationalityName: "Spanish",
-                capital: "Madrid",
-                continent: "Europe",
-                currencyCode: "EUR",
-                domain: "es",
-                iddCode: "34"
-            ));
+        act.ISONumeric.Should()
+            .Be(724);
+        act.ISO2.Should()
+            .Be("ES");
+        act.ISO3.Should()
+            .Be("ESP");
+        act.EnglishName.Should()
+            .Be("Spain");
+        act.NativeName.Should()
+            .Be("Espanya");
+        act.NationalityName.Should()
+            .Be("Spanish");
+        act.Capital.Should()
+            .Be("Madrid");
+        act.Continent.Should()
+            .Be("Europe");
+        act.CurrencyCode.Should()
+            .Be("EUR");
+        act.Domain.Should()
+            .Be("es");
+        act.IDDCode.Should()
+            .Be("34");
     }
 
 
@@ -436,5 +447,5 @@ public class UtilsGlobalizationExtensions
         // Assert
         act.Should()
             .BeTrue();
-    }    
+    }
 }
