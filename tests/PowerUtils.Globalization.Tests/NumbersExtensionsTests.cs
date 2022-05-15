@@ -22,7 +22,7 @@ public class NumbersExtensionsTests
     public void ConvertToCulture_DefaultCulture_FormattedNumber()
     {
         // Arrange
-        var number = "5442121,50";
+        var number = "5442121"+ UtilsNumber.GetDecimalSeparator() + "50";
 
 
         // Act
