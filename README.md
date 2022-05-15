@@ -73,6 +73,7 @@ dotnet add package PowerUtils.Globalization
 ### Extensions <a name="Extensions"></a>
 - `DateTimeExtensions`
   - `DateTime.ToTimestamp()`: Convert datetime to timestamp (Unix timestamp is seconds past epoch)
+  - `DateTime.ToTimestampMS()`: Convert datetime to timestamp in milliseconds (Unix timestamp is seconds past epoch)
   - `timestamp.FromTimestampToDateTime()`: Convert timestamp (Unix timestamp is seconds past epoch) to datetime
 
 - `NumbersExtensions`

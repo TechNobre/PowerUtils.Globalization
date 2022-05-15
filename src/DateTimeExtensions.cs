@@ -5,12 +5,20 @@ namespace PowerUtils.Globalization
     public static class DateTimeExtensions
     {
         /// <summary>
+        /// Convert datetime to timestamp in milliseconds (Unix timestamp is seconds past epoch)
+        /// </summary>
+        /// <param name="dateTime">Datetime to convert</param>
+        /// <returns>Timestamp</returns>
+        public static ulong ToTimestampMS(this DateTime dateTime)
+            => Convert.ToUInt64(dateTime.Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds);
+
+        /// <summary>
         /// Convert datetime to timestamp (Unix timestamp is seconds past epoch)
         /// </summary>
         /// <param name="dateTime">Datetime to convert</param>
         /// <returns>Timestamp</returns>
         public static ulong ToTimestamp(this DateTime dateTime)
-            => Convert.ToUInt64(dateTime.Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds);
+            => Convert.ToUInt64(dateTime.Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalSeconds);
 
 
 

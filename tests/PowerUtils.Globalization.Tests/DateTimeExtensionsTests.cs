@@ -4,6 +4,22 @@ namespace PowerUtils.Globalization.Tests;
 public class DateTimeExtensionsTests
 {
     [Fact]
+    public void ToTimestampMS_Datime_Timestamp()
+    {
+        // Arrange
+        var date = new DateTime(2019, 12, 12, 8, 12, 39);
+
+
+        // Act
+        var act = date.ToTimestampMS();
+
+
+        // Assert
+        act.Should()
+            .Be(1576138359000);
+    }
+
+    [Fact]
     public void ToTimestamp_Datime_Timestamp()
     {
         // Arrange
@@ -16,7 +32,7 @@ public class DateTimeExtensionsTests
 
         // Assert
         act.Should()
-            .Be(1576138359000);
+            .Be(1576138359);
     }
 
     [Fact]
@@ -24,7 +40,6 @@ public class DateTimeExtensionsTests
     {
         // Arrange
         var timestamp = 1652622232;
-        
 
 
         // Act
@@ -85,5 +100,39 @@ public class DateTimeExtensionsTests
         // Assert
         act.Should()
             .Be(new DateTime(2022, 05, 15, 13, 43, 52));
+    }
+
+    [Fact]
+    public void ToTimestamp_FromTimestampToDateTime()
+    {
+        // Arrange
+        var date = new DateTime(2019, 12, 12, 8, 12, 39);
+        var timestamp = date.ToTimestamp();
+
+
+        // Act
+        var act = timestamp.FromTimestampToDateTime();
+
+
+        // Assert
+        act.Should()
+            .Be(date);
+    }
+
+    [Fact]
+    public void FromTimestampToDateTime_ToTimestamp()
+    {
+        // Arrange
+        var timestamp = 1652622232uL;
+        var date = timestamp.FromTimestampToDateTime();
+
+
+        // Act
+        var act = date.ToTimestamp();
+
+
+        // Assert
+        act.Should()
+            .Be(timestamp);
     }
 }

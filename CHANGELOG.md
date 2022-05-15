@@ -10,11 +10,17 @@
 ### New Features
 
 - Added extension `timestamp.FromTimestampToDateTime()`. Convert timestamp (Unix timestamp is seconds past epoch) to datetime;
+- Added extension `DateTime.ToTimestampMS()`. Convert datetime to timestamp in milliseconds (Unix timestamp is seconds past epoch);
 
 
 ### Enhancements
 
 - Added validations in `UtilsGlobalization.Get*();`
+
+
+### Fixed
+
+  - Changed the return of the extension `DateTime.Timestamp();` from milliseconds to seconds;
 
 
 
