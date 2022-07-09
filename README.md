@@ -154,14 +154,14 @@ public class Country
 
 ## Contribution
 
-*Help me to help others*
+If you have any questions, comments, or suggestions, please open an issue or create a pull request
 
 
 
 
 ## LICENSE
 
-[MIT](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE)
+This project is licensed under the [MIT license](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE). See the [LICENSE](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE) file for details.
 
 
 
