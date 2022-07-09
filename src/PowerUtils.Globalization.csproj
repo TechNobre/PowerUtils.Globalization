@@ -1,10 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <!-- Assembly details -->
   <PropertyGroup>
     <ProjectGuid>836c5ff1-0f2c-436c-9c7c-90af12bbc322</ProjectGuid>
-
-    <CurrentYear>$([System.DateTime]::UtcNow.ToString(yyyy))</CurrentYear>
-
 
     <!-- Assembly and projecto details -->
     <!-- https://docs.microsoft.com/en-us/dotnet/standard/frameworks -->
@@ -13,13 +11,20 @@
 
     <RootNamespace>PowerUtils.Globalization</RootNamespace>
     <AssemblyName>PowerUtils.Globalization</AssemblyName>
+    
+    <Version>1.1.0</Version>
+
+    <PackageOutputPath>bin\</PackageOutputPath>
+  </PropertyGroup>
 
 
-    <!-- Package details -->
+  <!-- Package details -->
+  <PropertyGroup>
+    <CurrentYear>$([System.DateTime]::UtcNow.ToString(yyyy))</CurrentYear>
+
     <PackageId>PowerUtils.Globalization</PackageId>
     <title>PowerUtils.Globalization</title>
     <Product>PowerUtils.Globalization</Product>
-    <Version>1.1.0</Version>
 
     <Authors>Nelson Nobre</Authors>
     <Company>TechNobre</Company>
@@ -32,11 +37,14 @@
     <PackageReleaseNotes>https://github.com/TechNobre/PowerUtils.Globalization/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <Summary>Utils, helpers and extensions to work with globalization</Summary>
     <PackageTags>PowerUtils;Utils;Helpers;Extensions;Globalization;Countries</PackageTags>
-    <RepositoryUrl>https://github.com/TechNobre/PowerUtils.Globalization</RepositoryUrl>
     <PackageProjectUrl>https://github.com/TechNobre/PowerUtils.Globalization</PackageProjectUrl>
     <NeutralLanguage>en-GB</NeutralLanguage>
 
-    <PackageOutputPath>bin\</PackageOutputPath>
+    <PackageIcon>logo_128x128.png</PackageIcon>
+    <PackageReadmeFile>nuget.org.md</PackageReadmeFile>
+
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/TechNobre/PowerUtils.Globalization</RepositoryUrl>
   </PropertyGroup>
 
 
