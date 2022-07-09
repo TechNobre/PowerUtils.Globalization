@@ -1,5 +1,8 @@
 # PowerUtils.Globalization
-Utils, helpers and extensions to work with globalization
+
+<img src="assets/logo/logo_128x128.png" alt="PowerUtils.Globalization" /></br>
+
+***Utils, helpers and extensions to work with globalization***
 
 ![Tests](https://github.com/TechNobre/PowerUtils.Globalization/actions/workflows/test-project.yml/badge.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.Globalization&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.Globalization)
