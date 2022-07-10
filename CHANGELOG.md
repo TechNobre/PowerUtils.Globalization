@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/TechNobre/PowerUtils.Globalization/compare/v1.2.0...v1.2.1) (2022-07-10)
+
+
+### Bug Fixes
+
+* False null from countries when use multi-threading ([2640d70](https://github.com/TechNobre/PowerUtils.Globalization/commit/2640d7094ab0fd493b2320bd3df80115b47220f1))
+
 # [1.2.0](https://github.com/TechNobre/PowerUtils.Globalization/compare/v1.1.0...v1.2.0) (2022-07-10)
 
 
