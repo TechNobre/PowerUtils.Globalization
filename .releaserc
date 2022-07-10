@@ -5,7 +5,7 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     ["semantic-release-plugin-csproj", {
-        "projectFile": "src/TestNuget.PleaseDontUse.csproj"
+        "projectFile": "src/PowerUtils.Globalization.Tests.csproj"
     }],
     "@semantic-release/changelog",
     "@semantic-release/github",
