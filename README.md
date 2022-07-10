@@ -13,27 +13,28 @@
 [![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.Globalization.svg)](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE)
 
 
+- [Support](#support-to)
+- [How to use](#how-to-use)
+    - [Installation](#installation)
+    - [Helpers](#helpers)
+    - [Extensions](#extensions)
+    - [Structures](#structures)
+- [Contribution](#contribution)
+- [License](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE)
+- [Changelog](./CHANGELOG.md)
 
-## Support to
+
+
+## Support to <a name="support-to"></a>
 - .NET 3.1 or more
 - .NET Standard 2.1 or more
 - .NET Framework 4.6.2 or more
 
 
 
-## Features
+## How to use <a name="how-to-use"></a>
 
-- [Installation](#Installation)
-- [Helpers](#Helpers)
-- [Extensions](#Extensions)
-- [Structures](#Structures)
-
-
-## Documentation
-
-### How to use
-
-#### Install NuGet package <a name="Installation"></a>
+### Install NuGet package <a name="installation"></a>
 This package is available through Nuget Packages: https://www.nuget.org/packages/PowerUtils.Globalization
 
 **Nuget**
@@ -48,7 +49,7 @@ dotnet add package PowerUtils.Globalization
 
 
 
-### Helpers <a name="Helpers"></a>
+### Helpers <a name="helpers"></a>
   - `UtilsGlobalization`
     - **Properties:**
       - `UtilsGlobalization.Countries`: Dictionary of countries;
@@ -75,7 +76,7 @@ dotnet add package PowerUtils.Globalization
     - `UtilsNumber.GetThousandSeparator()`: Return character for thousand separator;
 
 
-### Extensions <a name="Extensions"></a>
+### Extensions <a name="extensions"></a>
 - `DateTimeExtensions`
   - `DateTime.ToTimestamp()`: Convert datetime to timestamp (Unix timestamp is seconds past epoch)
   - `DateTime.ToTimestampMS()`: Convert datetime to timestamp in milliseconds (Unix timestamp is seconds past epoch)
@@ -129,7 +130,7 @@ dotnet add package PowerUtils.Globalization
   - `string.ConvertToFloatCulture()`: Convert text number to float number;
 
 
-### Structures <a name="Structures"></a>
+### Structures <a name="structures"></a>
 ```csharp
 public class Country
 {
@@ -152,19 +153,6 @@ public class Country
 
 
 
-## Contribution
+## Contribution <a name="contribution"></a>
 
 If you have any questions, comments, or suggestions, please open an issue or create a pull request
-
-
-
-
-## LICENSE
-
-This project is licensed under the [MIT license](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE). See the [LICENSE](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE) file for details.
-
-
-
-## Changelog
-
-[Here](./CHANGELOG.md)
