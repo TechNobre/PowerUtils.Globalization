@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Threading.Tasks;
 
 namespace PowerUtils.Globalization.Tests;
 
@@ -431,5 +432,25 @@ public class UtilsGlobalizationExtensions
         // Assert
         act.Should()
             .BeTrue();
+    }
+
+    [Fact]
+    public void ConcurrentRequests_Countries_CountryCodes()
+    {
+        // Arrange
+        var iso2 = "pt";
+
+
+        // Assert
+        Parallel.For(0, 100, body =>
+        {
+            var act = UtilsGlobalization
+                .IfExistISO2(iso2);
+
+
+            // Assert
+            act.Should()
+                .BeTrue();
+        });
     }
 }
