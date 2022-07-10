@@ -10,7 +10,7 @@
 
 ### Bug Fixes
 
-  - Changed the return of the extension `DateTime.Timestamp();` from milliseconds to seconds;
+* Changed the return of the extension `DateTime.Timestamp();` from milliseconds to seconds;
 
 
 
