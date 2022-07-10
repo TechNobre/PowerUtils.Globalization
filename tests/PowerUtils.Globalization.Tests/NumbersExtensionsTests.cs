@@ -3,7 +3,7 @@
 public class NumbersExtensionsTests
 {
     [Fact]
-    public void ConvertToCulture_PTLanguage_FormattedNumber()
+    public void StringPTLanguage_ConvertToCulture_FormattedNumber()
     {
         // Arrange
         var number = "1011,23";
@@ -19,10 +19,10 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToCulture_DefaultCulture_FormattedNumber()
+    public void StringWithCurrentDecimalSeparator_ConvertToCulture_FormattedNumber()
     {
         // Arrange
-        var number = "5442121"+ UtilsNumber.GetDecimalSeparator() + "50";
+        var number = "5442121" + UtilsNumber.GetDecimalSeparator() + "50";
 
 
         // Act
@@ -35,7 +35,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToCulture_DoubleCulture_FormattedNumber()
+    public void DoubleWithSpecificLanguage_ConvertToCulture_FormattedNumber()
     {
         // Arrange
         var language = "en-GB";
@@ -52,7 +52,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToCulture_DoubleDefault_FormattedNumber()
+    public void Double_ConvertToCulture_FormattedNumber()
     {
         // Arrange
         var number = 2121.4551d;
@@ -68,7 +68,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToCulture_DecimalCulture_FormattedNumber()
+    public void DecimalWithSpecificLanguage_ConvertToCulture_FormattedNumber()
     {
         // Arrange
         var language = "es-ES";
@@ -85,7 +85,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToCulture_DecimalDefault_FormattedNumber()
+    public void Decimal_ConvertToCulture_FormattedNumber()
     {
         // Arrange
         var number = 2121.4551M;
@@ -101,7 +101,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToCulture_FloatCulture_FormattedNumber()
+    public void FloatWithSpecificLanguage_ConvertToCulture_FormattedNumber()
     {
         // Arrange
         var language = "es-ES";
@@ -118,7 +118,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToCulture_FloatDefault_FormattedNumber()
+    public void Float_ConvertToCulture_FormattedNumber()
     {
         // Arrange
         var number = 2121.4551f;
@@ -134,7 +134,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToCulture_IntCulture_FormattedNumber()
+    public void IntWithSpecificLanguage_ConvertToCulture_FormattedNumber()
     {
         // Arrange
         var language = "fr-FR";
@@ -151,7 +151,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToCulture_IntDefault_FormattedNumber()
+    public void Int_ConvertToCulture_FormattedNumber()
     {
         // Arrange
         var number = 987654321;
@@ -167,7 +167,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToCulture_UIntCulture_FormattedNumber()
+    public void UIntWithSpecificLanguage_ConvertToCulture_FormattedNumber()
     {
         // Arrange
         var language = "en-US";
@@ -184,7 +184,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToCulture_UIntDefault_FormattedNumber()
+    public void UInt_ConvertToCulture_FormattedNumber()
     {
         // Arrange
         var number = 987654321U;
@@ -200,7 +200,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToShortCulture_Culture_FormattedNumber()
+    public void StringWithSpecificLanguage_ConvertToShortCulture_Short()
     {
         // Arrange
         var language = "pt-PT";
@@ -217,7 +217,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToShortCulture_Default_FormattedNumber()
+    public void String_ConvertToShortCulture_Short()
     {
         // Arrange
         var number = "921";
@@ -233,7 +233,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToUShortCulture_Culture_FormattedNumber()
+    public void StringWithSpecificLanguage_ConvertToUShortCulture_UShort()
     {
         // Arrange
         var language = "pt-PT";
@@ -250,7 +250,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToUShortCulture_Default_FormattedNumber()
+    public void String_ConvertToUShortCulture_UShort()
     {
         // Arrange
         var number = "921";
@@ -266,7 +266,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToIntCulture_Culture_FormattedNumber()
+    public void StringWithSpecificLanguage_ConvertToIntCulture_Int()
     {
         // Arrange
         var language = "pt-PT";
@@ -283,7 +283,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToIntCulture_Default_FormattedNumber()
+    public void String_ConvertToIntCulture_Int()
     {
         // Arrange
         var number = "921";
@@ -299,7 +299,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToUIntCulture_Culture_FormattedNumber()
+    public void StringWithSpecificLanguage_ConvertToUIntCulture_UInt()
     {
         // Arrange
         var language = "pt-PT";
@@ -316,7 +316,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToUIntCulture_Default_FormattedNumber()
+    public void String_ConvertToUIntCulture_UInt()
     {
         // Arrange
         var number = "921";
@@ -332,7 +332,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToLongCulture_Culture_FormattedNumber()
+    public void StringWithSpecificLanguage_ConvertToLongCulture_Long()
     {
         // Arrange
         var language = "pt-PT";
@@ -349,7 +349,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToLongCulture_Default_FormattedNumber()
+    public void String_ConvertToLongCulture_Long()
     {
         // Arrange
         var number = "921";
@@ -365,7 +365,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToULongCulture_Culture_FormattedNumber()
+    public void StringWithSpecificLanguage_ConvertToULongCulture_ULong()
     {
         // Arrange
         var language = "pt-PT";
@@ -382,7 +382,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToULongCulture_Default_FormattedNumber()
+    public void String_ConvertToULongCulture_ULong()
     {
         // Arrange
         var number = "921";
@@ -398,7 +398,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToFloatCulture_Culture_FormattedNumber()
+    public void StringWithSpecificLanguage_ConvertToFloatCulture_Float()
     {
         // Arrange
         var language = "pt-PT";
@@ -415,7 +415,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToFloatCulture_Default_FormattedNumber()
+    public void String_ConvertToFloatCulture_Float()
     {
         // Arrange
         var number = "92124";
@@ -431,7 +431,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToDoubleCulture_Culture_FormattedNumber()
+    public void StringWithSpecificLanguage_ConvertToDoubleCulture_Double()
     {
         // Arrange
         var language = "pt-PT";
@@ -448,7 +448,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToDoubleCulture_Default_FormattedNumber()
+    public void String_ConvertToDoubleCulture_Double()
     {
         // Arrange
         var number = "92124";
@@ -464,7 +464,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToDecimalCulture_Culture_FormattedNumber()
+    public void StringWithSpecificLanguage_ConvertToDecimalCulture_Decimal()
     {
         // Arrange
         var language = "pt-PT";
@@ -481,7 +481,7 @@ public class NumbersExtensionsTests
     }
 
     [Fact]
-    public void ConvertToDecimalCulture_Default_FormattedNumber()
+    public void String_ConvertToDecimalCulture_Decimal()
     {
         // Arrange
         var number = "92124";
