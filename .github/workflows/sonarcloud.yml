@@ -1,21 +1,21 @@
 name: 'SonarCloud'
 
 
-
 on:
+  workflow_dispatch: # To can dispatch manually
+
   push:
     branches:
       - main
+
   pull_request:
-    types: [opened, reopened, synchronize]
+    types: [opened, reopened, edited, synchronize]
     branches:
       - main
 
 
-
 env:
-  SDK_VERSION: '6.0.300'
-
+  SDK_VERSION: '6.0.301'
 
 
 jobs:
@@ -31,7 +31,7 @@ jobs:
         dotnet-version: ${{ env.SDK_VERSION }}
 
     - name: "Set up JDK 11"
-      uses: actions/setup-java@v3.3.0
+      uses: actions/setup-java@v3.4.0
       with:
         distribution: 'adopt'
         java-version: '11'

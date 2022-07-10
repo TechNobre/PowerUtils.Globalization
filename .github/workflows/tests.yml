@@ -1,18 +1,17 @@
 name: 'Tests'
 
 
-
 on:
+  workflow_dispatch: # To can dispatch manually
+
   pull_request:
-    types: [opened, reopened, synchronize]
+    types: [opened, reopened, edited, synchronize]
     branches:
       - main
 
 
-
 env:
-  SDK_VERSION: '6.0.300'
-
+  SDK_VERSION: '6.0.301'
 
 
 jobs:
@@ -37,4 +36,4 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: "Test"
-      run: dotnet test --configuration Release --no-build
+      run: dotnet test --configuration Release --no-build --verbosity normal --logger "console;verbosity=detailed"
