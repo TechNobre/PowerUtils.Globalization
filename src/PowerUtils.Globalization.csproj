@@ -34,13 +34,13 @@
     <Copyright>Copyright © $(CurrentYear) by TechNobre</Copyright>
 
     <Description>Utils, helpers and extensions to work with globalization</Description>
-    <PackageReleaseNotes>https://github.com/TechNobre/PowerUtils.Globalization/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <Summary>Utils, helpers and extensions to work with globalization</Summary>
     <PackageTags>PowerUtils;Utils;Helpers;Extensions;Globalization;Countries</PackageTags>
     <PackageProjectUrl>https://github.com/TechNobre/PowerUtils.Globalization</PackageProjectUrl>
     <NeutralLanguage>en-GB</NeutralLanguage>
 
     <PackageIcon>logo_128x128.png</PackageIcon>
+    <PackageReadmeFile>README.nuget.org</PackageReadmeFile>
 
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/TechNobre/PowerUtils.Globalization</RepositoryUrl>
@@ -66,6 +66,7 @@
   <ItemGroup Condition="'$(Configuration)'=='Release'">
     <None Include="..\assets\logo\logo_128x128.png" Pack="true" PackagePath="" />
     <None Include="..\LICENSE" Pack="true" PackagePath="" />
+    <None Include="..\README.nuget.org" Pack="true" PackagePath="" />
   </ItemGroup>
 
 
