@@ -5,7 +5,7 @@ namespace PowerUtils.Globalization.Tests;
 public class UtilsGlobalizationExtensions
 {
     [Fact]
-    public void Countries_PT_Country()
+    public void PT_Countries_Country()
     {
         // Arrange
         var code = "PT";
@@ -42,7 +42,7 @@ public class UtilsGlobalizationExtensions
 
 
     [Fact]
-    public void CountryList_ES_Country()
+    public void ESIsoNumeric_CountryList_Country()
     {
         // Arrange
         var isoNumeric = 724;
@@ -79,7 +79,7 @@ public class UtilsGlobalizationExtensions
 
 
     [Fact]
-    public void CultureInfos_ptPT_CultureInfo()
+    public void CulturePtPT_CultureInfos_CultureInfo()
     {
         // Arrange
         var code = "pt-PT";
@@ -96,7 +96,7 @@ public class UtilsGlobalizationExtensions
 
 
     [Fact]
-    public void CultureInfoList_enGB_CultureInfo()
+    public void CultureEnGB_CultureInfoList_CultureInfo()
     {
         // Arrange
         var code = "en-GB";
@@ -112,7 +112,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetISONumeric_EmptyCode_NegativeOne()
+    public void InvalidIso2_GetISONumeric_NegativeOne()
     {
         // Arrange
         var code = "rr";
@@ -128,23 +128,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetISONumeric_DoesNotExist_NegativeOne()
-    {
-        // Arrange
-        var code = "rr";
-
-
-        // Act
-        var act = UtilsGlobalization.GetISONumeric(code);
-
-
-        // Assert
-        act.Should()
-            .Be(-1);
-    }
-
-    [Fact]
-    public void GetISONumeric_Exists_ISONumeric()
+    public void Iso2PT_GetISONumeric_ISONumeric620()
     {
         // Arrange
         var code = "pt";
@@ -160,7 +144,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetISO3_DoesNotExist_NULL()
+    public void InvalidIso2_GetISO3_NULL()
     {
         // Arrange
         var code = "rr";
@@ -176,7 +160,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetISO3_Exists_ISO3()
+    public void Iso2PT_GetISO3_ISO3()
     {
         // Arrange
         var code = "pT";
@@ -208,7 +192,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetEnglishName_Exists_EnglishName()
+    public void Iso2PT_GetEnglishName_EnglishName()
     {
         // Arrange
         var code = "pT";
@@ -224,7 +208,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetNativeName_DoesNotExist_NULL()
+    public void InvalidIso2_GetNativeName_NULL()
     {
         // Arrange
         var code = "rr";
@@ -240,7 +224,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetNativeName_Exists_NativeName()
+    public void Iso2ES_GetNativeName_NativeName()
     {
         // Arrange
         var code = "eS";
@@ -256,7 +240,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetNationalityName_DoesNotExist_NULL()
+    public void InvalidIso2_GetNationalityName_NULL()
     {
         // Arrange
         var code = "rr";
@@ -272,7 +256,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetNationalityName_Exists_NationalityName()
+    public void Iso2ES_GetNationalityName_NationalityName()
     {
         // Arrange
         var code = "eS";
@@ -288,7 +272,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetIDDCode_DoesNotExist_NULL()
+    public void InvalidIso2_GetIDDCode_NULL()
     {
         // Arrange
         var code = "rr";
@@ -304,7 +288,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetIDDCode_Exists_NationalityName()
+    public void Iso2ES_GetIDDCode_NationalityName()
     {
         // Arrange
         var code = "eS";
@@ -320,7 +304,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetCultureInfo_DoesNotExist_NULL()
+    public void InvalidCultureCode_GetCultureInfo_NULL()
     {
         // Arrange
         var cultureCode = "rr-rr";
@@ -336,7 +320,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void GetCultureInfo_Exists_CultureInfo()
+    public void CultureCodeES_GetCultureInfo_CultureCode()
     {
         // Arrange
         var cultureCode = "es-es";
@@ -352,7 +336,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void IfExistISO3_EmptyCode_FALSE()
+    public void EmptryString_IfExistISO3_False()
     {
         // Arrange
         var code = "";
@@ -369,7 +353,7 @@ public class UtilsGlobalizationExtensions
 
 
     [Fact]
-    public void IfExistISO3_DoesNotExist_FALSE()
+    public void InvalidIso3_IfExistISO3_False()
     {
         // Arrange
         var code = "rr-rr";
@@ -385,7 +369,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void IfExistISO3_Exists_TRUE()
+    public void Iso3ESO_IfExistISO3_True()
     {
         // Arrange
         var code = "esp";
@@ -401,7 +385,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void IfExistISO2_EmptyCode_FALSE()
+    public void EmptyString_IfExistISO2_False()
     {
         // Arrange
         var code = "";
@@ -418,7 +402,7 @@ public class UtilsGlobalizationExtensions
 
 
     [Fact]
-    public void IfExistISO2_DoesNotExist_FALSE()
+    public void InvalidIso2_IfExistISO2_False()
     {
         // Arrange
         var code = "rr-rr";
@@ -434,7 +418,7 @@ public class UtilsGlobalizationExtensions
     }
 
     [Fact]
-    public void IfExistISO2_Exists_TRUE()
+    public void Iso2ES_IfExistISO2_True()
     {
         // Arrange
         var code = "es";

@@ -3,29 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerUtils.Globalization", "src\PowerUtils.Globalization.csproj", "{3A0EA678-895D-4544-AC3C-C163A74126E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerUtils.Globalization", "src\PowerUtils.Globalization.csproj", "{836C5FF1-0F2C-436C-9C7C-90AF12BBC322}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.project", "1.project", "{B81B9D64-0C62-4D75-97FB-1E0E9CCB4BAD}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-		.gitignore = .gitignore
-		CHANGELOG.md = CHANGELOG.md
-		global.json = global.json
-		LICENSE = LICENSE
-		README.md = README.md
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.src", "1.src", "{3561059A-B90A-494F-856B-0881379309B8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.cicd", "2.cicd", "{08AE7F08-3288-457B-BE49-9D33A62C26CB}"
-	ProjectSection(SolutionItems) = preProject
-		.github\dependabot.yml = .github\dependabot.yml
-		.github\workflows\publish-nuget.yml = .github\workflows\publish-nuget.yml
-		.github\workflows\sonarcloud.yml = .github\workflows\sonarcloud.yml
-		.github\workflows\test-project.yml = .github\workflows\test-project.yml
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.src", "3.src", "{3561059A-B90A-494F-856B-0881379309B8}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.tests", "4.tests", "{62CAEBF7-3668-46E5-8694-D0BE528BE7EA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.tests", "2.tests", "{62CAEBF7-3668-46E5-8694-D0BE528BE7EA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerUtils.Globalization.Tests", "tests\PowerUtils.Globalization.Tests\PowerUtils.Globalization.Tests.csproj", "{80F70B96-7294-4E58-BF2B-CB9F218CB934}"
 EndProject
@@ -35,10 +17,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3A0EA678-895D-4544-AC3C-C163A74126E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A0EA678-895D-4544-AC3C-C163A74126E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A0EA678-895D-4544-AC3C-C163A74126E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A0EA678-895D-4544-AC3C-C163A74126E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{836C5FF1-0F2C-436C-9C7C-90AF12BBC322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{836C5FF1-0F2C-436C-9C7C-90AF12BBC322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{836C5FF1-0F2C-436C-9C7C-90AF12BBC322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{836C5FF1-0F2C-436C-9C7C-90AF12BBC322}.Release|Any CPU.Build.0 = Release|Any CPU
 		{80F70B96-7294-4E58-BF2B-CB9F218CB934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{80F70B96-7294-4E58-BF2B-CB9F218CB934}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80F70B96-7294-4E58-BF2B-CB9F218CB934}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,7 +30,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{3A0EA678-895D-4544-AC3C-C163A74126E8} = {3561059A-B90A-494F-856B-0881379309B8}
+		{836C5FF1-0F2C-436C-9C7C-90AF12BBC322} = {3561059A-B90A-494F-856B-0881379309B8}
 		{80F70B96-7294-4E58-BF2B-CB9F218CB934} = {62CAEBF7-3668-46E5-8694-D0BE528BE7EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

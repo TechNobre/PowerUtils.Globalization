@@ -4,14 +4,14 @@ namespace PowerUtils.Globalization.Tests;
 public class DateTimeExtensionsTests
 {
     [Fact]
-    public void ToTimestampMS_Datime_Timestamp()
+    public void DateTime_ToTimestampMS_Timestamp()
     {
         // Arrange
-        var date = new DateTime(2019, 12, 12, 8, 12, 39);
+        var dateTime = new DateTime(2019, 12, 12, 8, 12, 39);
 
 
         // Act
-        var act = date.ToTimestampMS();
+        var act = dateTime.ToTimestampMS();
 
 
         // Assert
@@ -20,14 +20,14 @@ public class DateTimeExtensionsTests
     }
 
     [Fact]
-    public void ToTimestamp_Datime_Timestamp()
+    public void Datime_ToTimestamp_Timestamp()
     {
         // Arrange
-        var date = new DateTime(2019, 12, 12, 8, 12, 39);
+        var dateTime = new DateTime(2019, 12, 12, 8, 12, 39);
 
 
         // Act
-        var act = date.ToTimestamp();
+        var act = dateTime.ToTimestamp();
 
 
         // Assert
@@ -36,7 +36,7 @@ public class DateTimeExtensionsTests
     }
 
     [Fact]
-    public void ToTimestamp_Int_DateTime()
+    public void Int_ToTimestamp_DateTime()
     {
         // Arrange
         var timestamp = 1652622232;
@@ -52,7 +52,7 @@ public class DateTimeExtensionsTests
     }
 
     [Fact]
-    public void ToTimestamp_UInt_DateTime()
+    public void UInt_ToTimestamp_DateTime()
     {
         // Arrange
         var timestamp = 1652622232u;
@@ -69,7 +69,7 @@ public class DateTimeExtensionsTests
     }
 
     [Fact]
-    public void ToTimestamp_Long_DateTime()
+    public void Long_ToTimestamp_DateTime()
     {
         // Arrange
         var timestamp = 1652622232L;
@@ -86,7 +86,7 @@ public class DateTimeExtensionsTests
     }
 
     [Fact]
-    public void ToTimestamp_ULong_DateTime()
+    public void ULong_ToTimestamp_DateTime()
     {
         // Arrange
         var timestamp = 1652622232uL;
@@ -103,11 +103,11 @@ public class DateTimeExtensionsTests
     }
 
     [Fact]
-    public void ToTimestamp_FromTimestampToDateTime()
+    public void Timestamp_FromTimestampToDateTime_DateTime()
     {
         // Arrange
-        var date = new DateTime(2019, 12, 12, 8, 12, 39);
-        var timestamp = date.ToTimestamp();
+        var dateTime = new DateTime(2019, 12, 12, 8, 12, 39);
+        var timestamp = dateTime.ToTimestamp();
 
 
         // Act
@@ -116,11 +116,11 @@ public class DateTimeExtensionsTests
 
         // Assert
         act.Should()
-            .Be(date);
+            .Be(dateTime);
     }
 
     [Fact]
-    public void FromTimestampToDateTime_ToTimestamp()
+    public void DateTime_ToTimestamp_Timestamp()
     {
         // Arrange
         var timestamp = 1652622232uL;
