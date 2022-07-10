@@ -1,6 +1,6 @@
 # PowerUtils.Globalization
 
-<img src="assets/logo/logo_128x128.png" alt="PowerUtils.Globalization" /></br>
+![Logo](https://raw.githubusercontent.com/TechNobre/PowerUtils.Globalization/main/assets/logo/logo_128x128.png)
 
 ***Utils, helpers and extensions to work with globalization***
 
@@ -21,7 +21,7 @@
     - [Structures](#structures)
 - [Contribution](#contribution)
 - [License](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE)
-- [Changelog](./CHANGELOG.md)
+- [Changelog](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/CHANGELOG.md)
 
 
 
@@ -43,7 +43,7 @@ Install-Package PowerUtils.Globalization
 ```
 
 **.NET CLI**
-```
+```bash
 dotnet add package PowerUtils.Globalization
 ```
 
@@ -155,4 +155,4 @@ public class Country
 
 ## Contribution <a name="contribution"></a>
 
-If you have any questions, comments, or suggestions, please open an issue or create a pull request
+If you have any questions, comments, or suggestions, please open an [issue](https://github.com/TechNobre/PowerUtils.Globalization/issues/new/choose) or create a [pull request](https://github.com/TechNobre/PowerUtils.Globalization/compare)
