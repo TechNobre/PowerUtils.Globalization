@@ -10,28 +10,33 @@ namespace PowerUtils.Globalization
 {
     public static class UtilsGlobalization
     {
+        private static readonly object _padLocknew = new object();
+
         public static IReadOnlyDictionary<string, Country> Countries
         {
             get
             {
-                if(_countries == null)
+                lock(_padLocknew)
                 {
-                    _countries = new Dictionary<string, Country>();
-
-                    var content = Encoding.UTF8.GetString(Resources.Countries);
-                    using(var reader = new StringReader(content))
+                    if(_countries == null)
                     {
-                        var serializer = new XmlSerializer(typeof(CountryContent[]));
-                        foreach(var dto in (CountryContent[])serializer.Deserialize(reader))
-                        {
-                            var country = Country.Factory.Create(dto);
+                        _countries = new Dictionary<string, Country>();
 
-                            _countries.Add(country.ISO2, country);
+                        var content = Encoding.UTF8.GetString(Resources.Countries);
+                        using(var reader = new StringReader(content))
+                        {
+                            var serializer = new XmlSerializer(typeof(CountryContent[]));
+                            foreach(var dto in (CountryContent[])serializer.Deserialize(reader))
+                            {
+                                var country = Country.Factory.Create(dto);
+
+                                _countries.Add(country.ISO2, country);
+                            }
                         }
                     }
-                }
 
-                return _countries;
+                    return _countries;
+                }
             }
         }
 
