@@ -20,8 +20,8 @@
     - [Extensions](#extensions)
     - [Structures](#structures)
 - [Contribution](#contribution)
-- [License](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE)
-- [Changelog](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/CHANGELOG.md)
+- [License](./LICENSE)
+- [Changelog](./CHANGELOG.md)
 
 
 
