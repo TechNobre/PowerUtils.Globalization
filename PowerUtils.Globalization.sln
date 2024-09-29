@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerUtils.Globalization", "src\PowerUtils.Globalization.csproj", "{836C5FF1-0F2C-436C-9C7C-90AF12BBC322}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.src", "1.src", "{3561059A-B90A-494F-856B-0881379309B8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3561059A-B90A-494F-856B-0881379309B8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.tests", "2.tests", "{62CAEBF7-3668-46E5-8694-D0BE528BE7EA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{62CAEBF7-3668-46E5-8694-D0BE528BE7EA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerUtils.Globalization.Tests", "tests\PowerUtils.Globalization.Tests\PowerUtils.Globalization.Tests.csproj", "{80F70B96-7294-4E58-BF2B-CB9F218CB934}"
 EndProject
