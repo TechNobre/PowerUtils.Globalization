@@ -13,21 +13,23 @@
 [![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.Globalization.svg)](https://github.com/TechNobre/PowerUtils.Globalization/blob/main/LICENSE)
 
 
-- [Support](#support-to)
-- [How to use](#how-to-use)
-    - [Installation](#installation)
-    - [Helpers](#helpers)
-    - [Extensions](#extensions)
-    - [Structures](#structures)
-- [Contribution](#contribution)
-- [License](./LICENSE)
-- [Changelog](./CHANGELOG.md)
+- [Support to ](#support-to-)
+- [How to use ](#how-to-use-)
+  - [Install NuGet package ](#install-nuget-package-)
+  - [Helpers ](#helpers-)
+  - [Extensions ](#extensions-)
+  - [Structures ](#structures-)
+- [Contribution ](#contribution-)
 
 
 
 ## Support to <a name="support-to"></a>
-- .NET 3.1 or more
-- .NET Standard 2.1 or more
+- .NET 8.0
+- .NET 7.0
+- .NET 6.0
+- .NET 5.0
+- .NET 3.1
+- .NET Standard 2.1
 - .NET Framework 4.6.2 or more
 
 
@@ -63,7 +65,7 @@ dotnet add package PowerUtils.Globalization
       - `UtilsGlobalization.GetNativeName(iso2)`: Return native name;
       - `UtilsGlobalization.GetNationalityName(iso2)`: Return nationality name;
       - `UtilsGlobalization.GetIDDCode(iso2)`: Return IDDCode;
-      - `UtilsGlobalization.GetCultureInfo(cultureCode)`: Return the culture info; 
+      - `UtilsGlobalization.GetCultureInfo(cultureCode)`: Return the culture info;
       - `UtilsGlobalization.IfExistISO3()`: Method to check if the country code ISO3 exist;
       - `UtilsGlobalization.IfExistISO2()`: Method to check if the country code iso2 exist;
 
