@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/TechNobre/PowerUtils.Globalization/compare/v1.2.1...v1.3.0) (2024-09-29)
+
+
+### Features
+
+* Added support to `.NET7` and `.NET8` ([8db6ad1](https://github.com/TechNobre/PowerUtils.Globalization/commit/8db6ad1f6cfd3c216ac1773aa857173d177f58de))
+
 ## [1.2.1](https://github.com/TechNobre/PowerUtils.Globalization/compare/v1.2.0...v1.2.1) (2022-07-10)
 
 
