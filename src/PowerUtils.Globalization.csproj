@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ProjectGuid>836c5ff1-0f2c-436c-9c7c-90af12bbc322</ProjectGuid>
 
-    <TargetFrameworks>net8.0;net7.0;net6.0;net5.0;netcoreapp3.1;netstandard2.1;net48;net462</TargetFrameworks>
+    <TargetFrameworks>net9.0;net8.0;net7.0;net6.0;net5.0;netcoreapp3.1;netstandard2.1;net48;net462</TargetFrameworks>
 
     <RootNamespace>PowerUtils.Globalization</RootNamespace>
     <AssemblyName>PowerUtils.Globalization</AssemblyName>
