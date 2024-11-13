@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/TechNobre/PowerUtils.Globalization/compare/v1.3.0...v1.4.0) (2024-11-13)
+
+
+### Features
+
+* Added support to .NET9 ([b25b933](https://github.com/TechNobre/PowerUtils.Globalization/commit/b25b933d59a890ccbd37d28ee66199a5b9222efe))
+
 # [1.3.0](https://github.com/TechNobre/PowerUtils.Globalization/compare/v1.2.1...v1.3.0) (2024-09-29)
 
 
