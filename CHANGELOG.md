@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/TechNobre/PowerUtils.Globalization/compare/v1.4.0...v2.0.0) (2025-08-30)
+
+
+### Bug Fixes
+
+* Marked all implementations as `Obsolete` ([15ad53b](https://github.com/TechNobre/PowerUtils.Globalization/commit/15ad53b87e5a9f5a10df4bedd3103a3b080aca28))
+
+
+### BREAKING CHANGES
+
+* Deprecated package
+
 # [1.4.0](https://github.com/TechNobre/PowerUtils.Globalization/compare/v1.3.0...v1.4.0) (2024-11-13)
 
 
