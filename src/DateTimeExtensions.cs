@@ -2,6 +2,7 @@
 
 namespace PowerUtils.Globalization
 {
+    [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
     public static class DateTimeExtensions
     {
         /// <summary>
@@ -9,6 +10,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="dateTime">Datetime to convert</param>
         /// <returns>Timestamp</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static ulong ToTimestampMS(this DateTime dateTime)
             => Convert.ToUInt64(dateTime.Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds);
 
@@ -17,6 +19,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="dateTime">Datetime to convert</param>
         /// <returns>Timestamp</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static ulong ToTimestamp(this DateTime dateTime)
             => Convert.ToUInt64(dateTime.Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalSeconds);
 
@@ -27,6 +30,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="timestamp">Timestamp to convert</param>
         /// <returns>DateTime</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static DateTime FromTimestampToDateTime(this int timestamp)
             => FromTimestampToDateTime(Convert.ToDouble(timestamp));
 
@@ -35,6 +39,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="timestamp">Timestamp to convert</param>
         /// <returns>DateTime</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static DateTime FromTimestampToDateTime(this uint timestamp)
             => FromTimestampToDateTime(Convert.ToDouble(timestamp));
 
@@ -43,6 +48,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="timestamp">Timestamp to convert</param>
         /// <returns>DateTime</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static DateTime FromTimestampToDateTime(this long timestamp)
             => FromTimestampToDateTime(Convert.ToDouble(timestamp));
 
@@ -51,6 +57,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="timestamp">Timestamp to convert</param>
         /// <returns>DateTime</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static DateTime FromTimestampToDateTime(this ulong timestamp)
             => FromTimestampToDateTime(Convert.ToDouble(timestamp));
 
@@ -59,6 +66,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="timestamp">Timestamp to convert</param>
         /// <returns>DateTime</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static DateTime FromTimestampToDateTime(this double timestamp)
         {
             var dateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);

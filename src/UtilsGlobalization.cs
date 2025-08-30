@@ -8,10 +8,12 @@ using System.Xml.Serialization;
 
 namespace PowerUtils.Globalization
 {
+    [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
     public static class UtilsGlobalization
     {
         private static readonly object _padLocknew = new object();
 
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static IReadOnlyDictionary<string, Country> Countries
         {
             get
@@ -40,11 +42,14 @@ namespace PowerUtils.Globalization
             }
         }
 
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static IEnumerable<Country> CountryList => _countries.Select(s => s.Value);
         private static Dictionary<string, Country> _countries;
 
 
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static IReadOnlyDictionary<string, CultureInfo> CultureInfos => _cultureInfos;
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static IEnumerable<CultureInfo> CultureInfoList => _cultureInfos.Select(s => s.Value);
 
         private static readonly Dictionary<string, CultureInfo> _cultureInfos = CultureInfo
@@ -64,6 +69,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
         /// <returns>ISONumeric | -1 when the code does not exist</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static int GetISONumeric(string iso2)
         {
             if(IfExistISO2(iso2))
@@ -79,6 +85,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
         /// <returns>ISO3</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string GetISO3(string iso2)
         {
             if(IfExistISO2(iso2))
@@ -94,6 +101,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
         /// <returns>EnglishName</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string GetEnglishName(string iso2)
         {
             if(IfExistISO2(iso2))
@@ -109,6 +117,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
         /// <returns>NativeName</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string GetNativeName(string iso2)
         {
             if(IfExistISO2(iso2))
@@ -124,6 +133,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
         /// <returns>NationalityName</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string GetNationalityName(string iso2)
         {
             if(IfExistISO2(iso2))
@@ -139,6 +149,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
         /// <returns>IDDCode</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string GetIDDCode(string iso2)
         {
             if(IfExistISO2(iso2))
@@ -154,6 +165,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="cultureCode">Culture code</param>
         /// <returns>Return the culture info</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static CultureInfo GetCultureInfo(string cultureCode)
             => CultureInfos.SingleOrDefault(s => s.Key.Equals(cultureCode, StringComparison.InvariantCultureIgnoreCase)).Value;
 
@@ -162,6 +174,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="iso3">Three-letter code</param>
         /// <returns>Bool if exist or not</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static bool IfExistISO3(string iso3)
         {
             if(string.IsNullOrWhiteSpace(iso3))
@@ -183,6 +196,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="iso2">Two-letter code</param>
         /// <returns>Bool if exist or not</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static bool IfExistISO2(string iso2)
         {
             if(string.IsNullOrWhiteSpace(iso2))
