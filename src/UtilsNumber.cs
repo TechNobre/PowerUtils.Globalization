@@ -1,7 +1,9 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 
 namespace PowerUtils.Globalization
 {
+    [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
     public static class UtilsNumber
     {
         /// <summary>
@@ -9,6 +11,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="languageCode">Language code</param>
         /// <returns>Decimal separator</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string GetDecimalSeparator(string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -20,6 +23,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>Decimal separator</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string GetDecimalSeparator(CultureInfo cultureInfo)
             => cultureInfo.NumberFormat.CurrencyDecimalSeparator;
 
@@ -27,6 +31,7 @@ namespace PowerUtils.Globalization
         /// Return character for decimal separator
         /// </summary>
         /// <returns>Decimal separator</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string GetDecimalSeparator()
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -38,6 +43,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="languageCode">Language code</param>
         /// <returns>Thousand separator</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string GetThousandSeparator(string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -49,6 +55,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>Thousand separator</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string GetThousandSeparator(CultureInfo cultureInfo)
             => cultureInfo.NumberFormat.CurrencyGroupSeparator;
 
@@ -56,6 +63,7 @@ namespace PowerUtils.Globalization
         /// Return character for thousand separator
         /// </summary>
         /// <returns>Thousand separator</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string GetThousandSeparator()
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;

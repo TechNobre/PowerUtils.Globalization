@@ -3,6 +3,7 @@ using System.Globalization;
 
 namespace PowerUtils.Globalization
 {
+    [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
     public static class NumbersExtensions
     {
         /// <summary>
@@ -11,6 +12,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this string value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -23,6 +25,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this string value, CultureInfo cultureInfo)
         {
             var number = double.Parse(value, NumberStyles.Any, cultureInfo);
@@ -35,6 +38,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="value">Text number input</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this string value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -50,6 +54,7 @@ namespace PowerUtils.Globalization
         /// <param name="languageCode">Language code</param>
         /// <param name="decimalDigits">Decimal digits</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this double value, string languageCode, int decimalDigits = 2)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -64,6 +69,7 @@ namespace PowerUtils.Globalization
         /// <param name="cultureInfo">Culture info</param>
         /// <param name="decimalDigits">Decimal digits</param>m>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this double value, CultureInfo cultureInfo, int decimalDigits = 2)
             => Math.Round(value, decimalDigits).ToString("N" + decimalDigits, cultureInfo.NumberFormat);
 
@@ -73,6 +79,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Double number</param>
         /// <param name="decimalDigits">Decimal digits</param>m>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this double value, int decimalDigits = 2)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -86,6 +93,7 @@ namespace PowerUtils.Globalization
         /// <param name="languageCode">Language code</param>
         /// <param name="decimalDigits">Decimal digits</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this decimal value, string languageCode, int decimalDigits = 2)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -100,6 +108,7 @@ namespace PowerUtils.Globalization
         /// <param name="cultureInfo">Culture info</param>
         /// <param name="decimalDigits">Decimal digits</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this decimal value, CultureInfo cultureInfo, int decimalDigits = 2)
             => Math.Round(value, decimalDigits).ToString("N" + decimalDigits, cultureInfo.NumberFormat);
 
@@ -109,6 +118,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Decimal number</param>
         /// <param name="decimalDigits">Decimal digits</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this decimal value, int decimalDigits = 2)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -122,6 +132,7 @@ namespace PowerUtils.Globalization
         /// <param name="languageCode">Language code</param>
         /// <param name="decimalDigits">Decimal digits</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this float value, string languageCode, int decimalDigits = 2)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -136,6 +147,7 @@ namespace PowerUtils.Globalization
         /// <param name="cultureInfo">Culture info</param>
         /// <param name="decimalDigits">Decimal digits</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this float value, CultureInfo cultureInfo, int decimalDigits = 2)
             => Math.Round(value, decimalDigits).ToString("N" + decimalDigits, cultureInfo.NumberFormat);
 
@@ -145,6 +157,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Float number</param>
         /// <param name="decimalDigits">Decimal digits</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this float value, int decimalDigits = 2)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -157,6 +170,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Float number</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this int value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -169,6 +183,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Float number</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this int value, CultureInfo cultureInfo)
             => value.ToString("N0", cultureInfo.NumberFormat);
 
@@ -177,6 +192,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="value">Float number</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this int value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -189,6 +205,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Float number</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this uint value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -202,6 +219,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Float number</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this uint value, CultureInfo cultureInfo)
             => value.ToString("N0", cultureInfo.NumberFormat);
 
@@ -210,6 +228,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="value">Float number</param>
         /// <returns>Text formatted in culture</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static string ConvertToCulture(this uint value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -226,6 +245,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>Short number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static short ConvertToShortCulture(this string value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -238,6 +258,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>Short number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static short ConvertToShortCulture(this string value, CultureInfo cultureInfo)
         {
             var number = short.Parse(value, NumberStyles.Any, cultureInfo);
@@ -249,6 +270,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="value">Text number input</param>
         /// <returns>Short number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static short ConvertToShortCulture(this string value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -264,6 +286,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>UShort number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static ushort ConvertToUShortCulture(this string value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -276,6 +299,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>UShort number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static ushort ConvertToUShortCulture(this string value, CultureInfo cultureInfo)
         {
             var number = ushort.Parse(value, NumberStyles.Any, cultureInfo);
@@ -287,6 +311,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="value">Text number input</param>
         /// <returns>UShort number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static ushort ConvertToUShortCulture(this string value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -303,6 +328,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>Int number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static int ConvertToIntCulture(this string value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -315,6 +341,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>Int number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static int ConvertToIntCulture(this string value, CultureInfo cultureInfo)
         {
             var number = int.Parse(value, NumberStyles.Any, cultureInfo);
@@ -327,6 +354,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="value">Text number input</param>
         /// <returns>Int number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static int ConvertToIntCulture(this string value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -344,6 +372,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>UInt number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static uint ConvertToUIntCulture(this string value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -356,6 +385,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>UInt number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static uint ConvertToUIntCulture(this string value, CultureInfo cultureInfo)
         {
             var number = uint.Parse(value, NumberStyles.Any, cultureInfo);
@@ -367,6 +397,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="value">Text number input</param>
         /// <returns>UInt number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static uint ConvertToUIntCulture(this string value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -383,6 +414,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>Long number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static long ConvertToLongCulture(this string value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -395,6 +427,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>Long number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static long ConvertToLongCulture(this string value, CultureInfo cultureInfo)
         {
             var number = long.Parse(value, NumberStyles.Any, cultureInfo);
@@ -418,6 +451,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>ULong number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static ulong ConvertToULongCulture(this string value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -433,6 +467,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>ULong number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static ulong ConvertToULongCulture(this string value, CultureInfo cultureInfo)
         {
             var number = ulong.Parse(value, NumberStyles.Any, cultureInfo);
@@ -444,6 +479,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="value">Text number input</param>
         /// <returns>ULong number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static ulong ConvertToULongCulture(this string value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -460,6 +496,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>Float number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static float ConvertToFloatCulture(this string value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -472,6 +509,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>Float number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static float ConvertToFloatCulture(this string value, CultureInfo cultureInfo)
         {
             var number = float.Parse(value, NumberStyles.Any, cultureInfo);
@@ -483,6 +521,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="value">Text number input</param>
         /// <returns>Float number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static float ConvertToFloatCulture(this string value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -500,6 +539,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>Double number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static double ConvertToDoubleCulture(this string value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -512,6 +552,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>Double number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static double ConvertToDoubleCulture(this string value, CultureInfo cultureInfo)
         {
             var number = double.Parse(value, NumberStyles.Any, cultureInfo);
@@ -524,6 +565,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="value">Text number input</param>
         /// <returns>Double number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static double ConvertToDoubleCulture(this string value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
@@ -540,6 +582,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="languageCode">Language code</param>
         /// <returns>Decimal number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static decimal ConvertToDecimalCulture(this string value, string languageCode)
         {
             var cultureInfo = CultureInfo.CreateSpecificCulture(languageCode);
@@ -552,6 +595,7 @@ namespace PowerUtils.Globalization
         /// <param name="value">Text number input</param>
         /// <param name="cultureInfo">Culture info</param>
         /// <returns>Decimal number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static decimal ConvertToDecimalCulture(this string value, CultureInfo cultureInfo)
         {
             var number = decimal.Parse(value, NumberStyles.Any, cultureInfo);
@@ -564,6 +608,7 @@ namespace PowerUtils.Globalization
         /// </summary>
         /// <param name="value">Text number input</param>
         /// <returns>Decimal number</returns>
+        [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
         public static decimal ConvertToDecimalCulture(this string value)
         {
             var cultureInfo = System.Threading.Thread.CurrentThread.CurrentCulture;
